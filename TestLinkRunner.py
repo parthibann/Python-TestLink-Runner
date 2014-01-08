@@ -115,7 +115,7 @@ class TestLinkRunner():
         
     def run(self,test):
         result = _TestResult(self.testLinkURL,self.devKey,self.testPlanId,self.buildName)
-        tr = str(test(result))                
+        test(result)
         
 #-------------------------------------------------------------------------        
 class OutputRedirector(object):
