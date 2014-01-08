@@ -107,9 +107,9 @@ class _TestResult(TestResult):
      
 #------------------------------------------------------------------------
 class TestLinkRunner():
-    def __init__(self,_testPlanId, _buildName):
-        self.testLinkURL = "http://192.168.6.91/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
-        self.devKey = "857f401ec22e47ee5bf6dadd1f839a20"
+    def __init__(self,_testLinkURL,_devKey,_testPlanId, _buildName):
+        self.testLinkURL = _testLinkURL
+        self.devKey = _devKey
         self.testPlanId = _testPlanId
         self.buildName = _buildName
         
